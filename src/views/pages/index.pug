@@ -1,0 +1,12 @@
+extends ../layouts/pages
+block append head
+	block title
+		- var title='Home'; // Page title
+
+block content
+	button#authorize-button(style="display:none;") Authorize
+	button#signout-button(style="display:none;") Sign Out
+	#calendar
+
+block foot-script
+	script(src="https://apis.google.com/js/api.js")
